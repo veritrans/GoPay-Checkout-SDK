@@ -1,0 +1,6 @@
+framework module GopayCheckoutKit {
+  umbrella header "GopayCheckoutKit.h"
+
+  export *
+  module * { export * }
+}
