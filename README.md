@@ -12,6 +12,15 @@ iOS library to enable GoPay checkout flow via Midtrans API.
 
 #### cocoapods
 
+If you're using cocoapods, add this to your `.podfile`
+
+```
+target 'MyApp' do
+  pod 'GopayCheckoutKit'
+end
+```
+
+then do `pod install`
 
 
 ### SDK Integration
