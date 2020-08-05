@@ -8,5 +8,4 @@ Pods/
 xcuserdata/
 DerivedData/
 build/
-GopayCheckoutKit.xcframework/ios-arm64
-GopayCheckoutKit.xcframework/ios-x86_64-simulator
+
