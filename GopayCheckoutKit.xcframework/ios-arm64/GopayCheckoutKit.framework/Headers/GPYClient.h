@@ -18,6 +18,7 @@
 #import "GPYAccountInfo.h"
 #import "GPYDisableAccountResult.h"
 #import "GPYTransactionResult.h"
+#import "GPYVendor.h"
 
 
 NS_ASSUME_NONNULL_BEGIN
