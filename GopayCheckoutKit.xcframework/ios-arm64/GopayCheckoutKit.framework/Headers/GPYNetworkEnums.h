@@ -6,9 +6,9 @@
 //  Copyright © 2020 Gojek. All rights reserved.
 //
 
-typedef NS_ENUM(NSUInteger, GPYEnvironment) {
-    GPYEnvironmentSandbox,
-    GPYEnvironmentProduction
+typedef NS_ENUM(NSUInteger, GPYNetworkServiceType) {
+    GPYNetworkServiceTypeSDK,
+    GPYNetworkServiceTypeAnalytics
 };
 
 typedef NS_ENUM(NSUInteger, GPYHTTPMethod) {
