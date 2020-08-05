@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
 s.name             = "GopayCheckoutKit"
-s.version          = "0.1.0"
+s.version          = "0.1.1"
 s.summary          = "GoPay checkout sdk"
 s.homepage         = "https://veritrans.co.id/"
 s.license          = 'MIT'
