@@ -10,4 +10,6 @@ s.source           = { :git => 'https://github.com/veritrans/GoPay-Checkout-SDK'
 s.platform     = :ios, '9.0'
 s.requires_arc = true
 s.vendored_frameworks = 'GopayCheckoutKit.xcframework'
+
+s.ios.deployment_target  = '9.0'
 end
