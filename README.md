@@ -4,13 +4,14 @@ iOS library to enable GoPay checkout flow via Midtrans API.
 
 ### SDK Installation
 
-##### Manual Installation
+#### Manual Installation
 
 1. Download this repo
-2. Go to your project files -> Targets -> On `General` tab, drag the `GopayCheckoutKit.xcframework` to the `Frameworks, Libraries, and Embedded Content` section.
-3. build and run
+2. Drag the `GopayCheckoutKit.xcframework` to your poroject on xcode
+3. On popup, choose `copy items if needed` and `create groups` then click `finish`
+4. build and run
 
-#### cocoapods
+#### cocoapods installation
 
 If you're using cocoapods, add this to your `.podfile`
 
@@ -52,9 +53,11 @@ To setup your app url scheme , There're two ways to do this, You can choose eith
 
 ### SDK Initialization
 
-In your AppDelegate File you need to setup the sdk within the `application:didfinishlaunchingwithoptions:`  and `application:openURL:`method.
+SDK initialization can be done anywhere when you want to start to use the sdk's method. In this example, we'll use AppDelegate to setup the sdk within the `application:didfinishlaunchingwithoptions:`.
 
 Eversince ios 13, Apple introduces `SceneDelegate`, so if your app target includes ios 13 and above, you'll also need to add the `handleCallbackUrl` on the `SceneDelegate` file within the `openURLContexts:` method.
+
+**Important notes**
 
 For the `callbackUrl` parameter, please use your app url scheme with this format `myapp://home`, by adding `home` to your app url scheme, as shown in the code below
 
@@ -66,7 +69,7 @@ AppDelegate file
 - (BOOL) application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 ...
 
-[GPYClient  initWithMerchantServerURL:MERCHANT_SERVER_URL  merchantId:MERCHANT_ID callbackUrl:@"demoapp://home" isLoggingEnabled:YES];
+[GPYClient  initWithMerchantServerURL:MERCHANT_SERVER_URL  merchantId:MERCHANT_ID callbackUrl:@"myapp://home" isLoggingEnabled:NO];
 
 ...
 }
@@ -96,7 +99,7 @@ AppDelegate File
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-	GPYClient.initWithMerchantServerURL(MERCHANT_SERVER_URL, merchantId: MERCHANT_ID, callbackUrl: "demoapp://home", isLoggingEnabled: true)
+	GPYClient.initWithMerchantServerURL(MERCHANT_SERVER_URL, merchantId: MERCHANT_ID, callbackUrl: "myapp://home", isLoggingEnabled: false)
 
 	return true
 }
