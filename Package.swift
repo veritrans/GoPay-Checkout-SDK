@@ -5,9 +5,9 @@ import PackageDescription
 let package = Package(
     name: "GopayTokenization",
     defaultLocalization: "en",
-        platforms: [
-            .iOS(.v9)
-        ],
+    platforms: [
+        .iOS(.v9)
+    ],
     products: [
         .library(
             name: "GopayTokenization",
@@ -15,6 +15,6 @@ let package = Package(
     ],
     dependencies: [],
     targets: [
-        .binaryTarget(name: "GopayCheckoutKit", url: "https://github.com/veritrans/Gopay-tokenization-xcframework/releases/download/1.0.0/GopayCheckoutKit.xcframework-1.00.zip", checksum: "a20aede3aadebbdb9440973836ff0cee4ab8bfad455d49a3aa172ba17b80eeab")
+        .binaryTarget(name: "GopayCheckoutKit", url: "https://github.com/veritrans/Gopay-tokenization-xcframework/releases/download/1.1.0/GopayCheckoutKit.xcframework-1.1.0.zip", checksum: "6bddfe6ab2824e7b66c739a447159a0848093dadc66439beb2a74aed4d3dd282")
     ]
 )
