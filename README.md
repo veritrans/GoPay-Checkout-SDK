@@ -4,14 +4,29 @@ iOS library to enable GoPay checkout flow via Midtrans API.
 
 ### SDK Installation
 
-#### Manual Installation
+#### A. SPM Installation
+
+1. Open your application in Xcode and select your project’s Package Dependencies tab and click the `+` button:
+![Screen Shot 2023-02-28 at 12 35 00](https://user-images.githubusercontent.com/3756851/221765493-41bbbcfd-be5f-4f6c-a621-f436a61f8ab7.png)
+
+2. Copy the SDK repository URL `https://github.com/veritrans/GoPay-Checkout-SDK` into the search field, Under Dependency Rule, select Branch: `master` (to always get the latest version), and then click Add Package.
+![Screen Shot 2023-02-28 at 12 34 41](https://user-images.githubusercontent.com/3756851/221765511-21bbfc6a-2453-4c4d-97f7-211e497e3c81.png)
+
+3. After the package download completes, select, and click Add Package.
+![Screen Shot 2023-02-28 at 12 35 28](https://user-images.githubusercontent.com/3756851/221765453-52d4110a-e1d7-4508-9a31-b4151ce9654a.png)
+
+4. It's done! Gopay Tokenization SDK should now be listed under Swift Package Dependencies in the Xcode Project navigator.
+![Screen Shot 2023-02-28 at 12 39 40](https://user-images.githubusercontent.com/3756851/221765394-d7d06c19-e010-4335-b55a-357b32930d7d.png)
+
+
+#### B. Manual Installation
 
 1. Download this repo
 2. Drag the `GopayCheckoutKit.xcframework` to your poroject on xcode
 3. On popup, choose `copy items if needed` and `create groups` then click `finish`
 4. build and run
 
-#### cocoapods installation
+#### C. Cocoapods installation
 
 If you're using cocoapods, add this to your `.podfile`
 
