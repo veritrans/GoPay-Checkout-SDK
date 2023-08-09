@@ -15,6 +15,6 @@ let package = Package(
     ],
     dependencies: [],
     targets: [
-        .binaryTarget(name: "GopayCheckoutKit", url: "https://github.com/veritrans/Gopay-tokenization-xcframework/releases/download/1.1.0/GopayCheckoutKit.xcframework-1.1.0.zip", checksum: "6bddfe6ab2824e7b66c739a447159a0848093dadc66439beb2a74aed4d3dd282")
+        .binaryTarget(name: "GopayCheckoutKit", url: "https://github.com/veritrans/Gopay-tokenization-xcframework/releases/download/1.2.0/GopayCheckoutKit.xcframework-1.2.0.zip", checksum: "d69e878b090d51a49580bab7e78d220530a4ba8fe46ad56027914a356f6aafc9")
     ]
 )
